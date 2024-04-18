@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product-item {
+    width: calc(150 px); /* Por ejemplo, 3 elementos en una fila */
+    margin: 10px;
+    padding: 10px;
+    background-color: #F0F0F0;
+    border: 1px solid #CCC;
+  }
+  
+  .product-name {
+    font-weight: bold;
+  }
+  
+  .product-description {
+    margin-bottom: 5px;
+  }
+  
+  .product-price {
+    font-weight: bold;
+  }
