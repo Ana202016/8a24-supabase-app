@@ -7,6 +7,11 @@ import Slider from "../../components/slider";
 
 import { useRouter } from 'next/navigation'
 
+import ImageGallery from "react-image-gallery";
+
+import "react-image-gallery/styles/scss/image-gallery.scss";
+import "react-image-gallery/styles/css/image-gallery.css";
+
 export default function Products() {
 
   const router =useRouter();
@@ -96,34 +101,42 @@ function handleSearch(e) {
 
   return (
     <div className='my-6 flex min-h-screen flex-col items-center  p-3'>
+
+<div className='flex justify-star w-full obseluted'>
+        <button className='bg-amber-700 font-bold text-white rounded px-2  py-1 text-black m-2' onClick={() => window.location.href = "./"}>
+          Regresar
+        </button>      
+      </div>
       
-      <h1 className='text-center text-4xl font-bold text-amber-800 mb-4 font-mono'>Mis productos</h1>
+      <h1 className='text-center text-6xl font-bold font-serif text-amber-800 mb-4 font-mono'>Mis productos</h1>
+
+      <div className='flex justify-center w-full obseluted'>
+        <button className='bg-amber-700 font-bold text-white rounded px-2  py-1 text-black m-2' onClick={() => window.location.href = "./products/add"}>
+          Agregar 
+        </button>      
+      </div>
+
       <form className='mb-4' onSubmit={handleSearch}>
         <input
           type="text"
           placeholder='Buscar..'
-          className=' rounded px-2 text-black bg-gray-200'
+          className=' rounded px-2 py-1 text-black bg-gray-200'
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-{/**<div className='flex justify-end w-full'>*/}
-        <div className='flex justify-end w-full'>
-        <button className='bg-gray-300 rounded px-2 text-black m-2' onClick={() => window.location.href = "./products/add"}>
-          Agregar 
-        </button>
-    {/** </div>*/}  
 
-        <button 
+<button 
         type='submit'
-        className='bg-gray-300 rounded px-2 text-black m-2' >Buscar</button>
-</div>
+        className='bg-gray-300 rounded px-2 py-1 text-black m-2' >Buscar</button>
+        
+
          <p>Puedes realizar tu busqueda por el nombre o el tono de tu esmalte....</p>
       </form>
 
       <div className='col-md-2'>
         <label htmlFor="mar" className='control-label'>
           Marca
-        <select name="" id="mar" className='rounded-2 text-black m-2'onChange={handleFilt}>
+        <select name="" id="mar" className='rounded 2 px-2 py-1 text-black m-2 bg-gray-300'onChange={handleFilt}>
           <option value="BISSÚ" >BISSÚ</option>
           <option value="SANIYE" >SANIYE</option>
           <option value="SA" >SA</option>
@@ -134,16 +147,16 @@ function handleSearch(e) {
       {/**Slider */}
       <div
       className='container'>
-      <div className="py-14 px-4  w-full "
+      <div className="py-14 px-4  w-full"
      
      //className="product-item w-full h-40 p-4 flex flex-col justify-center"
       >
-        <h1>Este es un ejemplo de slider</h1>
+        <h1>Algunos de nuestros productos...</h1>
 
 
     <Slider
         height={120}
-        itemWidth={250}
+        itemWidth={220}
         items={prod?.map((product) => productCard(product))}
         />
       </div>
@@ -159,6 +172,7 @@ function handleSearch(e) {
           
           <div key={product.id}>
           <strong>{product.name}</strong>
+          
             <p>Price: ${product.price}</p>
             <p>Description: {product.description}</p>
             <p>Marca: {product.marca}</p>

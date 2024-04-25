@@ -110,7 +110,7 @@ const EditProductPage = ({ params }) => {
     
 
     return (
-        <div className="mt-8 bg-amber-600 rounded px-6 py-6 grid justify-items-center font-serif">
+        <div className="mt-8 bg-gray-300 rounded px-6 py-6 grid justify-items-center font-serif">
             <div className="">
                 <div className='mt-5px'>
                     <h1
@@ -173,13 +173,13 @@ const EditProductPage = ({ params }) => {
                 
                 <div className="flex mt-4 md:mt-6 posi">
                         <button
-                            className="bg-amber-900 rounded-md text-black font-bold font-serif px-2 py-2 mx-2 grid justify-items-center"
+                            className="bg-gray-500 rounded-md text-black font-bold font-serif px-2 py-2 mx-2 grid justify-items-center"
                         >
                             Guardar
                         </button>
                         <Link
                             href="/products"
-                            className="bg-amber-900 rounded-md text-black font-bold font-serif px-2 py-2 mx-2 grid justify-items-center"
+                            className="bg-gray-500 rounded-md text-black font-bold font-serif px-2 py-2 mx-2 grid justify-items-center"
                         >
                             Cancelar
                         </Link>

@@ -129,7 +129,7 @@ const EditProductPage = ({ params }) => {
             <div className="w-80 h-auto"> 
                 <div className='mt-5px'>
                     <h1
-                        className="text-white font-bold text-3xl italic font-serif ">
+                        className=" font-bold text-3xl italic font-serif ">
                         Producto {id}
                     </h1>
                 </div>
@@ -138,7 +138,7 @@ const EditProductPage = ({ params }) => {
                 
                     <div
                         className='mb-2 flex flex-col'>
-                            <label htmlFor="name" className="text-white py-1"> Nombre del producto</label>
+                            <label htmlFor="name" className=" py-1"> Nombre del producto</label>
                         <input
                             className="border rounded p-2 text-black"
                             type="text"
@@ -151,7 +151,7 @@ const EditProductPage = ({ params }) => {
                     
                     <div
                         className='mb-2 flex flex-col'>
-                            <label htmlFor="description" className="text-white py-1">Descripcion del producto</label>
+                            <label htmlFor="description" className=" py-1">Descripcion del producto</label>
                         <input
                             className="border rounded p-2 text-black wh-auto h-auto"
                             type="text"
@@ -164,7 +164,7 @@ const EditProductPage = ({ params }) => {
                    
                     <div
                         className='mb-2 flex flex-col'>
-                             <label htmlFor="price" className="text-white py-1">Precio del producto</label>
+                             <label htmlFor="price" className=" py-1">Precio del producto</label>
                         <input
                             className="border rounded p-2 text-black"
                             type="text"
@@ -177,7 +177,7 @@ const EditProductPage = ({ params }) => {
                     
                     <div
                         className='mb-2 flex flex-col'>
-                            <label htmlFor="marca" className="text-white py-1"> Marca del producto</label>
+                            <label htmlFor="marca" className=" py-1"> Marca del producto</label>
                         <input
                             className="border rounded p-2 text-black"
                             type="text"

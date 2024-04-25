@@ -113,7 +113,7 @@ export default function AddProduct(){
 
     return(
 
-        <div className="mt-8 bg-amber-600 rounded px-6 py-6 grid justify-items-center font-serif" onSubmit={onSave}>
+        <div className="mt-8 bg-gray-300 rounded px-6 py-6 grid justify-items-center font-serif" onSubmit={onSave}>
             <p className="text-black font-bold text-3xl italic font-serif ">Agregar Producto</p>
             <form method="POST">
 
@@ -183,11 +183,11 @@ export default function AddProduct(){
 
                 <div className="my-6 flex justify-center">
                     <button type="submit"
-                    className="bg-amber-900 rounded-md text-black font-bold font-serif px-2 py-2 mx-2 grid justify-items-center">
+                    className="bg-gray-500 rounded-md text-black font-bold font-serif px-2 py-2 mx-2 grid justify-items-center">
                         Registrar Producto
                     </button>
                     <button 
-                    className="bg-amber-900 rounded-md text-black font-bold font-serif px-2 py-2 mx-2 grid justify-items-center" onClick={() => window.location.href = "./"}>
+                    className="bg-gray-500 rounded-md text-black font-bold font-serif px-2 py-2 mx-2 grid justify-items-center" onClick={() => window.location.href = "./"}>
                         Cancelar
                     </button>
                 </div>
